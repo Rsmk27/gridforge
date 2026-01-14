@@ -14,16 +14,13 @@ GridForge is a web-controlled electrical simulation platform built with:
 
 **Architecture:**
 
-```
 
 Browser UI → Python API → MATLAB Engine → Electrical Simulation → Results → Browser UI
 
-```
-```
 
 ---
 
-### ⚡ **Section 2 — Simulation & Structure**
+### ⚡ **Section 1 — Simulation & Structure**
 
 ## ⚡ Current Simulation Model
 
@@ -47,9 +44,9 @@ The user controls **load demand** from the browser and MATLAB computes in real t
 
 ## 🧱 Project Structure
 
-```
+
 <pre>
-GridForge-01/
+gridforge/
 │
 ├── simulation/    # MATLAB models
 ├── backend/       # Python + MATLAB Engine API
@@ -58,7 +55,7 @@ GridForge-01/
 
 ---
 
-### 🛠️ **Section 3 — Setup**
+### 🛠️ **Section 2 — Setup**
 
 ## 🛠️ Prerequisites
 
@@ -95,7 +92,7 @@ out = grid_model(500)
 ```
 
 
-### 🔧 **Section 4 — Backend & Frontend**
+### 🔧 **Section 3 — Backend & Frontend**
 
 
 ### 3️⃣ Backend Setup
