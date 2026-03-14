@@ -1,0 +1,31 @@
+cd /d "D:\experimental projects\gridforge\GridForge-01\backend"
+
+py -3.10 -m venv venv
+
+venv\Scripts\activate
+
+pip install flask
+
+cd /d "C:\Program Files\MATLAB\R2023a\extern\engines\python"
+
+python setup.py install
+
+cd /d "D:\experimental projects\gridforge\GridForge-01\backend"
+
+python
+
+import matlab.engine
+import matlab
+
+eng = matlab.engine.start_matlab()
+
+x = matlab.double([16])
+eng.sqrt(x)
+
+eng.cd(r"D:\experimental projects\gridforge\GridForge-01\simulation", nargout=0)
+
+load = matlab.double([500])
+result = eng.grid_model(load)
+
+result
+
